@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header className="bg-alert">
             <h1>
-                Seek drink recipes   
+                Seek drink recipes
             </h1>
         </header>
     );
