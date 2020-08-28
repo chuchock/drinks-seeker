@@ -21,7 +21,12 @@ const RecipesProvider = (props) => {
             const getRecipes = async () => {
                 const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${name}&c=${category}`
                 const result = await axios.get(url);
-                setRecipes(result.data.drinks);
+
+                console.log(result)
+
+                if (result.data !== '') {
+                    setRecipes(result.data.drinks);
+                }
             }
 
             getRecipes();

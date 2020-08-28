@@ -7,8 +7,6 @@ const RecipesList = () => {
     // extract recipes
     const { recipes } = useContext(RecipesContext);
 
-    console.log('taka', recipes);
-
     return (
         <div className="row mt-5">
             {recipes.map(recipe => (
